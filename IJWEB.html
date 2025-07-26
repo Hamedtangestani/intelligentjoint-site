@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Intelligent Joint | AI Robotics</title>
+<style>
+    /* GLOBAL STYLES */
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(135deg, #0a0a0a, #121212);
+        color: #e0e0e0;
+        line-height: 1.6;
+    }
+
+    /* HEADER */
+    header {
+        background: rgba(10, 10, 10, 0.9);
+        color: #fff;
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 20px rgba(0, 240, 255, 0.2);
+    }
+    header h1 {
+        font-size: 24px;
+        margin: 0;
+        color: #00f0ff;
+        text-shadow: 0 0 10px #00f0ff;
+    }
+    nav a {
+        color: #fff;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    nav a:hover {
+        color: #00f0ff;
+        text-shadow: 0 0 8px #00f0ff;
+    }
+
+    /* HERO SECTION */
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px 8%;
+        height: 90vh;
+        flex-wrap: wrap;
+        background: #0d0d0d;
+        border-bottom: 2px solid #00f0ff;
+    }
+
+    .hero-text {
+        flex: 1;
+        max-width: 50%;
+        padding-right: 30px;
+        animation: fadeInLeft 1.5s ease;
+    }
+
+    .hero-text h2 {
+        font-size: 52px;
+        margin-bottom: 20px;
+        color: #fff;
+        text-shadow: 0 0 12px #00f0ff;
+    }
+
+    .hero-text p {
+        font-size: 20px;
+        margin-bottom: 25px;
+        color: #bfbfbf;
+    }
+
+    .btn {
+        background: #00f0ff;
+        color: #000;
+        padding: 12px 25px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: 0 0 15px #00f0ff;
+        transition: 0.3s;
+    }
+    .btn:hover {
+        background: #00bcd4;
+        box-shadow: 0 0 25px #00f0ff;
+    }
+
+    .hero-image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: fadeInRight 1.5s ease;
+    }
+
+    .hero-image img {
+        max-width: 90%;
+        height: auto;
+        filter: drop-shadow(0 0 20px #00f0ff);
+    }
+
+    /* SECTIONS */
+    section {
+        padding: 60px 20px;
+        max-width: 1200px;
+        margin: auto;
+        background: #121212;
+        border-radius: 12px;
+        margin-top: 40px;
+        box-shadow: 0 0 20px rgba(0, 240, 255, 0.15);
+    }
+    h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: #00f0ff;
+        text-shadow: 0 0 8px #00f0ff;
+    }
+    p, li {
+        color: #bfbfbf;
+    }
+    ul li {
+        margin-bottom: 10px;
+    }
+
+    .steps {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin-top: 30px;
+    }
+    .step-card {
+        background: #1c1c1c;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 240, 255, 0.1);
+        color: #fff;
+    }
+    .step-card h3 {
+        color: #00f0ff;
+        margin-bottom: 10px;
+    }
+
+    /* FOOTER */
+    footer {
+        background: #0a0a0a;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        border-top: 2px solid #00f0ff;
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeInLeft {
+        from { opacity: 0; transform: translateX(-50px); }
+        to { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes fadeInRight {
+        from { opacity: 0; transform: translateX(50px); }
+        to { opacity: 1; transform: translateX(0); }
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+        .hero {
+            flex-direction: column;
+            text-align: center;
+            height: auto;
+        }
+        .hero-text {
+            max-width: 100%;
+            padding: 0;
+        }
+        .hero-text h2 {
+            font-size: 38px;
+        }
+        .hero-image img {
+            max-width: 100%;
+            margin-top: 20px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Intelligent Joint</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#vision">Vision</a>
+        <a href="#how">How It Works</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-text">
+        <h2>Transform Your Ideas into Trainable Robots</h2>
+        <p>Using AI-powered design and modular joint systems to create intelligent, realistic, and ready-to-deploy robotics.</p>
+        <a href="#about" class="btn">Learn More</a>
+    </div>
+    <div class="hero-image">
+        <img src="images/hero.png" alt="Human to Robot Transition">
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>🧠 What is Intelligent Joint?</h2>
+    <p><b>Intelligent Joint (IJ)</b> is an advanced structural framework that leverages AI to create robotic designs that are both highly realistic and fully functional for simulation and real-world deployment.</p>
+    <p>Each IJ acts as a modular building block — available in both physical and virtual forms — that seamlessly integrates with other components to form complete, dexterous robotic systems.</p>
+    <ul>
+        <li>Scalable & Flexible – Adaptable to various robotic applications.</li>
+        <li>Rapid Assembly – Fast prototyping and easy implementation.</li>
+        <li>Customizable & Intelligent – Supports intuitive control and tailored configurations.</li>
+    </ul>
+</section>
+
+<!-- VISION -->
+<section id="vision">
+    <h2>🌍 Our Vision</h2>
+    <p>We aim to democratize robotics by making robot creation accessible to everyone — not just engineers.</p>
+    <p>Through the Intelligent Joint framework combined with AI, users can transform natural language descriptions or images into fully functional robotic systems grounded in physical reality.</p>
+    <ul>
+        <li>Make robot creation as intuitive as sketching an idea.</li>
+        <li>Enable rapid prototyping for healthcare, manufacturing, and education.</li>
+        <li>Reduce cost, time, and complexity to bring robotic ideas to life.</li>
+    </ul>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+    <h2>⚙️ How It Works</h2>
+    <div class="steps">
+        <div class="step-card"><h3>1. Provide Input</h3><p>Upload an image or give a simple description of your desired robot.</p></div>
+        <div class="step-card"><h3>2. AI-Powered Design</h3><p>Our intelligent agent generates a robotic system built entirely from Intelligent Joints.</p></div>
+        <div class="step-card"><h3>3. Ready-to-Use Output</h3><p>Receive a complete package: structure, control logic, and motion planning for simulation or real-world assembly.</p></div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:yourname@gmail.com" style="color:#00f0ff;">yourname@gmail.com</a></p>
+</section>
+
+<footer>
+    <p>© 2025 Intelligent Joint | Designed by Hamed Tangestani</p>
+</footer>
+
+</body>
+</html>
